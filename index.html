@@ -4,57 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Taylor Bras">
+    <meta name="description" content="Claire's books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.">
+    <meta name="Claire Sinagra, Books, Reading, Silly Space, Pretty Plants, Happy Hello, Freddy's Feelings, Events, Author, Writer, San Francisco, San Diego, Santa Clara, Santa Barbara">
     <title>Claire Sinagra</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
 </head>
 <body>
-    <header>
-        <h1>Claire Sinagra</h1>
-        <img src="images/hero.jpg" alt="image of Claire Sinagra working">
-        <h2>About</h2>
-            <p>Claire lives in the Rocky Mountains with her husband, an exceptionally perfect dog, and an attack cat.</p>
+    <div class="skip"><a href="#maincontent">Skip to main contente</a></div>
+    <header class="header">
+        <h1><a href="index.html" class="logo">Claire Sinagra</a</h1>
+        <nav>
+            <h2>Main Navigation</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#events">Events</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <h2>Main Navigation</h2>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Books</a></li>
-            <li><a href="#">Events</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
+
+
+    <main id="maincontent">
+        <section id="hero">
+            <img src="images/hero.jpg" alt="image of Claire Sinagra working">
+            <h2>About</h2>
+            <p>Claire lives in the Rocky Mountains with her husband, an exceptionally perfect dog, and an attack cat.</p>
+        </section>
+
+        <section id="books">
             <h2>Books</h2>
-                <p>Claire's books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</p>
-                <section>
+            <div class="skip"><a href="#events">Skip to next</a></div>
+            <p class="section-p">Claire's books have received starred reviews in Publishers Weekly, Library Journal, and Booklist. She is a New York Times and a USA Today bestseller and a RITA® winner.</p>
+            <div id="grid">
+                <section id="silly-space">
                     <img src="images/Sily-Space.svg" alt="Colorful Silly Space bookcover image of four purple and pink painted plantes against a dark starry sky.">
                     <h3>Silly Space</h3> 
                     <p>The planets were circling the Sun, staring into space, until suddenly they spot something else in their Solar System. What could it be? Who could it be? The planets have no idea but they're circling to find out.</p>   
                     <h4>2021</h4>
                 </section>
-                <sectin>
+
+                <sectin id="pretty-plants">
                     <img src="images/Pretty-Plants.svg" alt="Pretty Plants bookcover image of cherry blossoms and two birds against a pink background.">
                     <h3>Pretty Plants</h3>
                     <p>One tiny dandelion seed wants to hold onto its dandelion home, until the winter wind carries it away. The seed worries it won't be able to find its place in such a vast and frightening world. But everything is much more beautiful than it ever thought, and perhaps finding a new home isn't such a bad thing after all.</p>
                     <h4>2020</h4>
                 </sectin>
-                <section>
+
+                <section id="happy-hello">
                     <img src="images/Happy-Hello.svg" alt="Happy Hello bookcover image with title written in red against a light yellow background with a drawn image of three friends at the bottom.">
                     <h3>Happy Hello</h3>        
                     <p>Is it possible to find happiness in times of chaos and confusion?Yes! It is possible!Use these practices and techniques and find happiness each day. A workbook/activity book full of interactive fun!</p>
                     <h4>2019</h4>
                 </section>
-                <section>
+
+                <section id="freddys-feelings">
                     <img src="images/Freddys-Feelings.svg" alt="Freddy's Feelings bookcover image of title written in cursive against a blue pattern background and a girl wearing a green tanktop with red lips.">
                     </h3>Freddy's Feelings</h3>
                     <p>How to teach kids about emotions and feelings? Like teaching them everything else - using clear words, familiar situations, exciting pictures and a lot of hands-on activities (games, puzzles, coloring pages, etc.). </p>
                     <h4>2018</h4>
                 </section>
+            </div>
         </section>
-        <section>
+
+        <section id="events">
             <h2>Events</h2>
-            <p>Get an autographed book at Claire's bookstore events or hear her read her books at library events. </p>
-                <section>
+            <p class="section-p">Get an autographed book at Claire's bookstore events or hear her read her books at library events. </p>
+                <section id="san-diego">
                     <h3>San Diego</h3>
                     <dl>
                         <dt>Date:</dt>
@@ -68,7 +92,7 @@
                     </dl>
                     <button><a href="#">Tickets</a></button>
                 </section>
-                <section>
+                <section id="santa-clara">
                     <h3>Santa Clara</h3>
                     <dl>
                         <dt>Date:</dt>
@@ -82,7 +106,7 @@
                     </dl>
                     <button><a href="#">Tickets</a></button>
                 </section>
-                <section>
+                <section id="santa-barbara">
                     <h3>Sanata Barbara</h3>
                     <dl>
                         <dt>Date:</dt>
@@ -96,7 +120,7 @@
                     </dl>
                     <button><a href="#">Tickets</a></button>
                 </section>
-                <section>
+                <section id="san-francisco">
                     <h3>San Francisco</h3>
                     <dl>
                         <dt>Date:</dt>
@@ -111,8 +135,9 @@
                     <button><a href="#">Tickets</a></button>
                 </section>
         </section>
-        <section>
+        <section id="newsLetter">
             <h2>Newsletter Sign Up</h2>
+            <div class="skip"><a href="#footer">Skip to next</a></div>
             <form>
                 <label for="firstName">First name<span class="required">*</span></label>
                 <input type="text" placeholder="Enter first name" name="firstName" id="firstName" autocomplete="firstName" required>
@@ -127,33 +152,35 @@
             </form>
         </section>
     </main>
-    <footer>
+
+    <footer id="footer">
         <img src="images/Claire-Singara.jpg" alt="image of Claire Singara">
         <h2>Claire Sinagra, Inc</h2>
-        <p>All books and events are copyright Claire Sinagra, Inc.</p>
+        <p id="footer-description">All books and events are copyright Claire Sinagra, Inc.</p>
         
         <section>
+            <!--FACEBOOK-->
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="24" height="24"
             viewBox="0 0 24 24"
             style="fill:#000000;">
             <path d="M17.525,9H14V7c0-1.032,0.084-1.682,1.563-1.682h1.868v-3.18C16.522,2.044,15.608,1.998,14.693,2 C11.98,2,10,3.657,10,6.699V9H7v4l3-0.001V22h4v-9.003l3.066-0.001L17.525,9z"></path>
             </svg></a>
-    
+            <!--TWITTER-->
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="24" height="24"
             viewBox="0 0 30 30"
             style="fill:#000000;">
             <path d="M28,6.937c-0.957,0.425-1.985,0.711-3.064,0.84c1.102-0.66,1.947-1.705,2.345-2.951c-1.03,0.611-2.172,1.055-3.388,1.295 c-0.973-1.037-2.359-1.685-3.893-1.685c-2.946,0-5.334,2.389-5.334,5.334c0,0.418,0.048,0.826,0.138,1.215 c-4.433-0.222-8.363-2.346-10.995-5.574C3.351,6.199,3.088,7.115,3.088,8.094c0,1.85,0.941,3.483,2.372,4.439 c-0.874-0.028-1.697-0.268-2.416-0.667c0,0.023,0,0.044,0,0.067c0,2.585,1.838,4.741,4.279,5.23 c-0.447,0.122-0.919,0.187-1.406,0.187c-0.343,0-0.678-0.034-1.003-0.095c0.679,2.119,2.649,3.662,4.983,3.705 c-1.825,1.431-4.125,2.284-6.625,2.284c-0.43,0-0.855-0.025-1.273-0.075c2.361,1.513,5.164,2.396,8.177,2.396 c9.812,0,15.176-8.128,15.176-15.177c0-0.231-0.005-0.461-0.015-0.69C26.38,8.945,27.285,8.006,28,6.937z"></path>
             </svg></a>
-    
+            <!--INSTAGRAM-->
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="24" height="24"
             viewBox="0 0 50 50"
             style="fill:#000000;">
             <path d="M 8 3.0097656 C 4.53 3.0097656 2.0097656 5.0892187 2.0097656 7.9492188 C 2.0097656 10.819219 4.59 12.990234 8 12.990234 C 11.47 12.990234 13.990234 10.870625 13.990234 7.890625 C 13.830234 5.020625 11.36 3.0097656 8 3.0097656 z M 3 15 C 2.45 15 2 15.45 2 16 L 2 45 C 2 45.55 2.45 46 3 46 L 13 46 C 13.55 46 14 45.55 14 45 L 14 16 C 14 15.45 13.55 15 13 15 L 3 15 z M 18 15 C 17.45 15 17 15.45 17 16 L 17 45 C 17 45.55 17.45 46 18 46 L 27 46 C 27.552 46 28 45.552 28 45 L 28 30 L 28 29.75 L 28 29.5 C 28 27.13 29.820625 25.199531 32.140625 25.019531 C 32.260625 24.999531 32.38 25 32.5 25 C 32.62 25 32.739375 24.999531 32.859375 25.019531 C 35.179375 25.199531 37 27.13 37 29.5 L 37 45 C 37 45.552 37.448 46 38 46 L 47 46 C 47.55 46 48 45.55 48 45 L 48 28 C 48 21.53 44.529063 15 36.789062 15 C 33.269062 15 30.61 16.360234 29 17.490234 L 29 16 C 29 15.45 28.55 15 28 15 L 18 15 z"></path>
             </svg></a>
-    
+            <!--YOUTUBE-->
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="24" height="24"
             viewBox="0 0 64 64"
@@ -161,29 +188,32 @@
             <path d="M53.527,17.427C55.714,19.677,56,23.252,56,32s-0.286,12.323-2.473,14.573C51.34,48.822,49.062,49,32,49	s-19.34-0.178-21.527-2.427C8.286,44.323,8,40.748,8,32s0.286-12.323,2.473-14.573S14.938,15,32,15S51.34,15.178,53.527,17.427z M27.95,39.417l12.146-7.038L27.95,25.451V39.417z"></path>
             </svg></a>
         </section>
-        <section>
-            <h3><a href="#books">Books</a></h3>
-            <ul>
-                <li><a href="#silly-space">Silly Space</a></li>
-                <li><a href="#pretty-plants">Pretty Plants</a></li>
-                <li><a href="#happy-hello">Happy Hello</a></li>
-                <li><a href="#freddys-feelings">Freddy's Feelings</a></li>
-            </ul>
-        </section>
-        <section>
-            <h3><a href="#events">Events</a></h3>
-            <ul>
-                <li><a href="#san-diego">San Diego</a></li>
-                <li><a href="#santa-clara">Santa Clara</a></li>
-                <li><a href="#santa-barbara">Santa Barbara</a></li>
-                <li><a href="#san-francisco">San Francisco</a></li>
-            </ul>
+
+        <section id="book_information">
+            <section id="books_second">
+                <h3><a href="#books">Books</a></h3>
+                <ul>
+                    <li><a href="#books">Silly Space</a></li>
+                    <li><a href="#books">Pretty Plants</a></li>
+                    <li><a href="#books">Happy Hello</a></li>
+                    <li><a href="#books">Freddy's Feelings</a></li>
+                </ul>
+            </section>
+            <section id="events_second">
+                <h3><a href="#events">Events</a></h3>
+                <ul>
+                    <li><a href="#events">San Diego</a></li>
+                    <li><a href="#events">Santa Clara</a></li>
+                    <li><a href="#events">Santa Barbara</a></li>
+                    <li><a href="#events">San Francisco</a></li>
+                </ul>
+            </section>
         </section>
 
-        <small>&copy; 2022 Clair Sinagra, Inc. All Rights Reserved.</small>
-        <section>
+        <section id="terms">
             <small><a href="#">Privacy Statement</a></small>
             <small><a href="#">Terms of Service</a></small>
+            <small>&copy; 2022 Clair Sinagra, Inc. All Rights Reserved.</small>
         </section>
     </footer>
 </body>
