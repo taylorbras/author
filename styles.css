@@ -51,6 +51,27 @@ table {
     --darkorange: #DB8E36;
 }
 
+/* ------------- HERO IMAGE ------------- */
+img {
+    width:100%;
+    height:auto;
+}
+
+.hero {
+	position:relative;
+	/* wasnt working because I had display:inline-block; */
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
 /* ----------- GLOBAL STYLES------------ */
 
 h1, h2, #books h3, h4, p, nav, a {
@@ -73,30 +94,6 @@ h4 {
 
 li {
 	display: inline-block;
-}
-
-img {
-	display:block;
-}
-
-.hero {
-	position:relative;
-	display: inline-block;
-}
-
-.hero img {
-	width:100%;
-	height:auto;
-}
-
-.caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-    text-align: center;
-    color: white;
-    font-weight: bold;
 }
 
 #books, #events, #newsLetter, footer {
