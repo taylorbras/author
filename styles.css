@@ -1,11 +1,45 @@
-/* ----------- ACCESABILITY ------------ */
-.skip {
-	visibility:hidden;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-family: 'Comfortaa', cursive;
 }
 
-.skip:focus {
-	visibility:visible;
-	border:2px solid red;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 /* ------------- VARIABLES ------------- */
@@ -17,21 +51,175 @@
     --darkorange: #DB8E36;
 }
 
-/* ------------- SECTIONS ------------- */
+/* ----------- GLOBAL STYLES------------ */
 
-#books {
-	background-color: orange;
+h1, h2, #books h3, h4, p, nav, a {
+	text-align:center;
+	padding:10px;
+}
+
+h1, nav, a{
+	color:teal;
+	text-decoration:none;
+}
+
+h1 a:hover, nav a:hover, #button:hover {
+	color: #D74452;
+}
+
+h4 {
+	color:var(--teal);
+}
+
+ul {
+	overflow:hidden;
+}
+
+li {
+	display: inline-block;
+}
+
+img {
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+.hero {
+	position:relative;
+	display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#books, #events, #newsLetter, #footer {
+	padding:5%;
+}
+
+#grid{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+#grid img {
+	display:block;
+	padding-bottom: 15px;
+	padding-top: 30px;
 }
 
 #events {
-	background-color: beige;
+	background-color:var(--beige);
 }
 
-#newsLetter {
-	background-color: teal;
+#events section {
+	padding-bottom:20px;
+	padding-top:20px;
 }
 
-#footer {
-	background-color: darkorange;
+.hide {
+	display:none;
+}
+
+/* Events */
+button {
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid var(--teal);
+	height: 1.5em;
+	font-family: 'Comfortaa', cursive;
+	background-color: var(--teal);
+	color:white;
+}
+
+/* News Letter Form */
+form{
+	display: block;
+	width: 300px;
+	padding: 1em;
+	margin: 0 auto;
+	color: #222;
+	font-size: 1.1em;
+}
+
+input, label, fieldset{
+	display: block;
+	width: 95%;
+}
+
+.required{
+  display: inline-block;
+  color: #DE0B63;
+  font-size: 1.1em;
+}
+
+label{
+	padding-left: 0.5em;
+	margin: 0.75em 0 0.25em 0;
+}
+
+input{
+	font-size: 1em;
+	padding: 0.25em 0.5em;
+	border: 1px solid #222;
+	height: 1.5em;
+	font-family: 'Comfortaa', cursive;
+}
+
+fieldset{
+	border: 1px solid #222;
+	padding: 0.5em 0 1em 0.5em;
+	margin: 0.75em 0 0.25em 0;
+	width: 98%;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr 3fr;
+}
+
+input[type=submit]{
+	padding: 0.75em;
+	height: auto;
+	color: #fff;
+	background-color: var(--teal);
+	border: none;
+	width:100%;
+	margin-top:0.75em;
+	font-family: 'Comfortaa', cursive;
+}
+
+input[type=submit]:hover{
+	background-color:var(--darkorange);
+}
+
+textarea{
+	width: 100%;
+	height: 5em;
+	margin-bottom: 1em;
+}
+
+input:focus, textarea:focus{
+	border-color: var(--teal);
+	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
+	border-radius: 4px;
+}
+
+input:error, textarea:error{
+	border-color: #DE0B63;
+}
+
+/* ----------- ACCESABILITY ------------ */
+.skip {
+	visibility:hidden;
+}
+
+.skip:focus {
+	visibility:visible;
+	border:2px solid red;
 }
 
