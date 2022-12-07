@@ -63,7 +63,7 @@ h1, nav, a{
 	text-decoration:none;
 }
 
-h1 a:hover, nav a:hover, #button:hover {
+h1 a:hover, nav a:hover {
 	color: #D74452;
 }
 
@@ -71,23 +71,22 @@ h4 {
 	color:var(--teal);
 }
 
-ul {
-	overflow:hidden;
-}
-
 li {
 	display: inline-block;
 }
 
 img {
-	width:100%;
-	height:auto;
 	display:block;
 }
 
 .hero {
 	position:relative;
 	display: inline-block;
+}
+
+.hero img {
+	width:100%;
+	height:auto;
 }
 
 .caption {
@@ -100,19 +99,16 @@ img {
     font-weight: bold;
 }
 
-#books, #events, #newsLetter, #footer {
-	padding:5%;
+#books, #events, #newsLetter, footer {
+	padding:8%;
 }
 
-#grid{
-	display: grid;
-	grid-template-columns: 1fr;
-}
-
-#grid img {
+#books img {
 	display:block;
 	padding-bottom: 15px;
 	padding-top: 30px;
+	width:100%;
+	height:auto;
 }
 
 #events {
@@ -129,15 +125,7 @@ img {
 }
 
 /* Events */
-button {
-	font-size: 1em;
-	padding: 0.25em 0.5em;
-	border: 1px solid var(--teal);
-	height: 1.5em;
-	font-family: 'Comfortaa', cursive;
-	background-color: var(--teal);
-	color:white;
-}
+
 
 /* News Letter Form */
 form{
@@ -149,7 +137,7 @@ form{
 	font-size: 1.1em;
 }
 
-input, label, fieldset{
+input, label {
 	display: block;
 	width: 95%;
 }
@@ -173,15 +161,6 @@ input{
 	font-family: 'Comfortaa', cursive;
 }
 
-fieldset{
-	border: 1px solid #222;
-	padding: 0.5em 0 1em 0.5em;
-	margin: 0.75em 0 0.25em 0;
-	width: 98%;
-	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 3fr;
-}
-
 input[type=submit]{
 	padding: 0.75em;
 	height: auto;
@@ -197,20 +176,10 @@ input[type=submit]:hover{
 	background-color:var(--darkorange);
 }
 
-textarea{
-	width: 100%;
-	height: 5em;
-	margin-bottom: 1em;
-}
-
-input:focus, textarea:focus{
+input:focus {
 	border-color: var(--teal);
 	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
 	border-radius: 4px;
-}
-
-input:error, textarea:error{
-	border-color: #DE0B63;
 }
 
 /* ----------- ACCESABILITY ------------ */
@@ -222,4 +191,20 @@ input:error, textarea:error{
 	visibility:visible;
 	border:2px solid red;
 }
+
+/* when ready for grid 
+#books{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+flex box for books
+and grid for events
+
+tickets are links not button
+
+except for second navigation in the footer
+
+section of books display grid, 1fr 1fr. it will automatically put two next to eachother.
+*/
 
