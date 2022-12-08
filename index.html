@@ -29,7 +29,7 @@
             </ul>
         </nav>
         <section class="hero">
-            <img src="images/hero.png" alt="image of Claire Sinagra working">
+            <img srcset="images/hero.png" alt="image of Claire Sinagra working">
             <div class="caption">
                 <h2>About</h2>
                 <p>Claire lives in the Rocky Mountains with her husband, an exceptionally perfect dog, and an attack cat.</p>
@@ -146,15 +146,18 @@
             <div class="skip"><a href="#footer">Skip to footer</a></div>
             <h2>Newsletter Sign Up</h2>
             <form>
-                <label for="firstName">First name<span class="required">*</span></label>
-                <input type="text" placeholder="Enter first name" name="firstName" id="firstName" required>
-    
-                <label for="lastName">Last name<span class="required">*</span></label>
-                <input type="text" placeholder="Enter last name" name="lastName" id="lastName" required>
-    
-                <label for="myEmail">Email Address<span class="required">*</span></label>
-                <input type="text" placeholder="Enter email address" name="myEmail" id="myEmail" required>
-
+                <div>
+                    <label for="firstName">First name<span class="required">*</span></label>
+                    <input type="text" placeholder="Enter first name" name="firstName" id="firstName" required>
+                </div>
+                <div>
+                    <label for="lastName">Last name<span class="required">*</span></label>
+                    <input type="text" placeholder="Enter last name" name="lastName" id="lastName" required>
+                </div>
+                <div id="email">
+                    <label for="myEmail">Email Address<span class="required">*</span></label>
+                    <input type="text" placeholder="Enter email address" name="myEmail" id="myEmail" required>
+                </div>
                 <input type="submit" name="Sign Up" value="Sign Up">
             </form>
         </section>

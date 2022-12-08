@@ -70,6 +70,7 @@ img {
     text-align: center;
     color: white;
     font-weight: bold;
+	width:400px;
 }
 
 /* ----------- GLOBAL STYLES------------ */
@@ -116,14 +117,19 @@ dd {
 	padding-bottom:5px;
 }
 
-footer h2, footer p {
-	text-align:left;
-}
-
 footer {
 	text-align:center;
-	padding:5%;
+	padding-top:2%;
 	background-color:var(--orange);
+}
+
+footer h2 {
+	padding-top:25px;
+}
+
+footer h2, footer p {
+	text-align:left;
+	padding-left:5%;
 }
 
 footer li a, footer h3 a{
@@ -144,10 +150,10 @@ span {
 
 /* ----------- ID STYLES------------ */
 
-#books, #events, #newsLetter, footer {
-	padding-bottom:8%;
-	padding-left:8%;
-	padding-right:8%;
+#books, #events, #newsLetter {
+	padding-left:12%;
+	padding-right:12%;
+	padding-bottom:30px;
 }
 
 /* BOOKS */
@@ -189,9 +195,6 @@ span {
 
 /* NEWS LETTER FORM */
 form{
-	display: block;
-	width: 300px;
-	padding: 1em;
 	margin: 0 auto;
 	color: #222;
 	font-size: 1.1em;
@@ -199,7 +202,7 @@ form{
 
 input, label {
 	display: block;
-	width: 95%;
+	width: 100%;
 }
 
 .required{
@@ -218,12 +221,11 @@ input{
 
 input[type=submit]{
 	padding: 0.5em;
-	height: auto;
+	height:auto;
 	color: #fff;
 	background-color: var(--teal);
 	border: none;
-	width:100%;
-	margin-top:0.75em;
+	margin-top:3.1em;
 	font-family: 'Comfortaa', cursive;
 }
 
@@ -263,7 +265,19 @@ input:focus {
 }
 
 /* ---------- MEDIA QUERIES ----------- */
-@media screen and (min-width:770px) {
+@media screen and (min-width:580px) {
+	#books img {
+		width:100%;
+		height:700px;
+	}
+}
+
+@media screen and (min-width:900px) {
+	#books img {
+		width:100%;
+		height:auto;
+	}
+	
 	.grid {
 		display:grid;
 		grid-template-columns: 1fr 1fr;
@@ -277,12 +291,81 @@ input:focus {
 	#books {
 		padding-bottom:20px;
 	}
+
+	.caption {
+		font-size:large;
+		width:550px;
+	}
+
+	form {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	#email
+	 {
+		column-span:2/-1;
+	}
 }
 
-@media screen and (min-width:1030px) {
+@media screen and (min-width:1244px) {
+	.hero p {
+		padding-top:40px;
+		line-height:30px;
+	}
+	
+	.caption {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size:large;
+		width:550px;
+	}
+}
+
+@media screen and (min-width:1316px) {
 	#books .grid {
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	form {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1rem;
+	}
+
+	input[type=submit]{
+		margin-top:0px;
+	}
+}
+
+@media screen and (min-width:1459px) {
+	.hero img {
+		height:800px;
+		width:100%;
+	}
+	
+	.hero p {
+		padding-top:40px;
+		line-height:35px;
+	}
+	
+	.caption {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size:x-large;
+		width:700px;
 	}
 }
 
