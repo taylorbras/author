@@ -74,6 +74,10 @@ img {
 
 /* ----------- GLOBAL STYLES------------ */
 
+body {
+	line-height:1.5em;
+}
+
 h1, h2, #books h3, h4, p, nav, a {
 	text-align:center;
 	padding:10px;
@@ -84,7 +88,7 @@ h1, nav, a{
 	text-decoration:none;
 }
 
-h1 a:hover, nav a:hover {
+h1 a:hover, nav a:hover, #terms a:hover {
 	color: #D74452;
 }
 
@@ -104,8 +108,38 @@ li {
 	display: inline-block;
 }
 
+dt {
+	display:none;
+}
+
 dd {
 	padding-bottom:5px;
+}
+
+footer h2, footer p {
+	text-align:left;
+}
+
+footer {
+	text-align:center;
+	padding:5%;
+	background-color:var(--orange);
+}
+
+footer li a, footer h3 a{
+	color:black;
+}
+
+footer li a:hover {
+	color: #D74452;
+}
+
+footer section {
+	padding:15px;
+}
+
+span {
+	margin-top:30px;
 }
 
 /* ----------- ID STYLES------------ */
@@ -145,9 +179,13 @@ dd {
 }
 
 #events a:hover {
-	background-color:var(--darkorange);
+	background-color:var(--apple);
 }
 
+.line {
+	border-bottom: 2px solid black;
+	display:block;
+}
 
 /* NEWS LETTER FORM */
 form{
@@ -170,11 +208,6 @@ input, label {
   font-size: 1.1em;
 }
 
-label{
-	padding-left: 0.5em;
-	margin: 0.75em 0 0.25em 0;
-}
-
 input{
 	font-size: 1em;
 	padding: 0.25em 0.5em;
@@ -184,7 +217,7 @@ input{
 }
 
 input[type=submit]{
-	padding: 0.75em;
+	padding: 0.5em;
 	height: auto;
 	color: #fff;
 	background-color: var(--teal);
@@ -195,13 +228,24 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
-	background-color:var(--darkorange);
+	background-color:var(--apple);
 }
 
 input:focus {
 	border-color: var(--teal);
 	box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.3);
 	border-radius: 4px;
+}
+
+#newsLetter h2 {
+	margin-top:20px;
+}
+
+/* FOOTER */
+
+#secondNav {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 }
 
 /* ----------- ACCESABILITY ------------ */
@@ -217,6 +261,31 @@ input:focus {
 .hide {
 	display:none;
 }
+
+/* ---------- MEDIA QUERIES ----------- */
+@media screen and (min-width:770px) {
+	.grid {
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#books section {
+		padding-left:20px;
+		padding-right:20px;
+	}
+
+	#books {
+		padding-bottom:20px;
+	}
+}
+
+@media screen and (min-width:1030px) {
+	#books .grid {
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
 
 /* when ready for grid 
 #books{
