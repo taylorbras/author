@@ -88,17 +88,35 @@ h1 a:hover, nav a:hover {
 	color: #D74452;
 }
 
+h3 {
+	padding-bottom:10px;
+}
+
 h4 {
 	color:var(--teal);
+}
+
+nav {
+	padding-bottom:30px;
 }
 
 li {
 	display: inline-block;
 }
 
-#books, #events, #newsLetter, footer {
-	padding:8%;
+dd {
+	padding-bottom:5px;
 }
+
+/* ----------- ID STYLES------------ */
+
+#books, #events, #newsLetter, footer {
+	padding-bottom:8%;
+	padding-left:8%;
+	padding-right:8%;
+}
+
+/* BOOKS */
 
 #books img {
 	display:block;
@@ -108,6 +126,7 @@ li {
 	height:auto;
 }
 
+/* EVENTS */
 #events {
 	background-color:var(--beige);
 }
@@ -117,14 +136,20 @@ li {
 	padding-top:20px;
 }
 
-.hide {
-	display:none;
+#events a {
+	background-color:var(--teal);
+	color: white;
+	margin-top:10px;
+	display:block;
+	width:100px;
 }
 
-/* Events */
+#events a:hover {
+	background-color:var(--darkorange);
+}
 
 
-/* News Letter Form */
+/* NEWS LETTER FORM */
 form{
 	display: block;
 	width: 300px;
@@ -187,6 +212,10 @@ input:focus {
 .skip:focus {
 	visibility:visible;
 	border:2px solid red;
+}
+
+.hide {
+	display:none;
 }
 
 /* when ready for grid 
