@@ -437,21 +437,3 @@ input:focus {
 		width:700px;
 	}
 }
-
-
-/* when ready for grid 
-#books{
-	display: grid;
-	grid-template-columns: 1fr;
-}
-
-flex box for books
-and grid for events
-
-tickets are links not button
-
-except for second navigation in the footer
-
-section of books display grid, 1fr 1fr. it will automatically put two next to eachother.
-*/
-
